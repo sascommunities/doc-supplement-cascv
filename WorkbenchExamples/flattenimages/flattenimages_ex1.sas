@@ -1,0 +1,15 @@
+/***************************************************************/
+/*          S A S   S A M P L E   L I B R A R Y                */
+/*                                                             */
+/*    NAME: flattenimages_ex1                                  */
+/*   TITLE: Example 1 for PROC FLATTENIMAGES                   */
+/* PRODUCT: Machine Learning                                   */
+/*  SYSTEM: ALL                                                */
+/*    KEYS:                                                    */
+/*   PROCS: FLATTENIMAGES                                      */
+/***************************************************************/
+
+proc flattenimages data=mylib.images width=2 height=2 numchannels=COLOR;
+   output out=mylib.flat_image;
+run;
+
